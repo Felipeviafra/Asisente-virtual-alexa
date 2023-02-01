@@ -1,0 +1,21 @@
+def asistente_virtual():
+    nombre = input("¿Cómo te llamas? ")
+    print("Hola " + nombre + ", ¿en qué puedo ayudarte hoy?")
+
+    while True:
+        pregunta = input(nombre + ": ")
+
+        if pregunta == "salir":
+            print("Hasta luego, ¡que tengas un buen día!")
+            break
+        
+        # Aquí puedes añadir tus propias respuestas y lógica
+        # para manejar diferentes preguntas y comandos.
+        # Por ejemplo:
+        if pregunta == "quién eres":
+            print("Soy un asistente virtual creado en Python.")
+        else:
+            print("Lo siento, no entiendo lo que quieres decir.")
+
+# Iniciar el asistente virtual
+asistente_virtual()
